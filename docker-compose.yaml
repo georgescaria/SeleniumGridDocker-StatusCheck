@@ -1,0 +1,47 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.141.59
+    ports:
+      - 4444:4444
+  chrome:
+    image: selenium/node-chrome:3.141.59
+    depends_on:
+      - hub
+    shm_size: '2gb'
+    environment:
+      - HUB_HOST=hub
+    deploy:
+      replicas: 10
+  firefox:
+    image: selenium/node-firefox:3.141.59
+    depends_on:
+      - hub
+    shm_size: '2gb'
+    environment:
+      - HUB_HOST=hub
+    deploy:
+      replicas: 10
+    
+  tricentis1:
+    image: gscaria/seleniumtest
+    depends_on: 
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=firefox
+      - TESTNGXML=Tricentis.xml
+      - HUB_HOST=hub
+    volumes:
+      - .\outputs\1:/usr/share/udemy/test-output
+  tricentis2:
+    image: gscaria/seleniumtest
+    depends_on: 
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - TESTNGXML=Tricentis2.xml
+      - HUB_HOST=hub
+    volumes:
+      - .\outputs\2:/usr/share/udemy/test-output

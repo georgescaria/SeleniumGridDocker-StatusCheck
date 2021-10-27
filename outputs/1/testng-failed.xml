@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test5(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+  <test thread-count="5" name="Test3(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test7(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test7(failed) -->
+  <test thread-count="5" name="Test8(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test8(failed) -->
+  <test thread-count="5" name="Test6(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+  <test thread-count="5" name="Test9(failed)" parallel="tests">
+    <classes>
+      <class name="com.gSTAX.Tests.Tricentis">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="WebsiteTest1"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.gSTAX.Tests.Tricentis -->
+    </classes>
+  </test> <!-- Test9(failed) -->
+</suite> <!-- Failed suite [Suite] -->
