@@ -20,8 +20,10 @@ The **ENTRYPOINT** is set to run shell script(**hubstatuscheck.sh**) from where 
 
 3. Using **docker compose up** command, the following containers/services will be run in this Sample script:
 
-	1. Selenium Grid - consistes of follwing services
-		 i) Selenium Hub ii) Chrome node iii)) Firefox node
+	1. Selenium Grid - consistes of following containers/services
+		 i) Selenium Hub
+		 ii) Chrome node 
+		 iii) Firefox node
 	2. Selenium script 1 (Tricentis.xml)
 	3. Selenium script 2 (Tricentis2.xml)
 
