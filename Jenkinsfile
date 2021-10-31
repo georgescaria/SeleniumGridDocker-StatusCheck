@@ -23,5 +23,18 @@ pipeline {
 			    }                           
             }
         }
+        stage('Run Test on Selenium Grid') {
+        	steps {
+        		//sh
+        		bat "docker compose up"
+        		}
+        }
+        stage('Stop Grid') {
+        	steps {
+        		//sh
+        		bat "docker compose down"
+        		}
+        }
+        
     }
 }
