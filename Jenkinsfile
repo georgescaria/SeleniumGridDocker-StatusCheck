@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t='gscaria/seleniumtest' ."
+                bat "docker build -t gscaria/seleniumtest ."
             }
         }
         stage('Push Image') {
