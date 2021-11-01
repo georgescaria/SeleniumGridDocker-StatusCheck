@@ -24,7 +24,7 @@ services:
       replicas: 2
     
   tricentis1:
-    image: gscaria/seleniumtest
+    image: gscaria/seleniumtest:latest
     depends_on: 
       - chrome
       - firefox
@@ -35,7 +35,7 @@ services:
     volumes:
       - .\outputs\1:/usr/share/udemy/test-output
   tricentis2:
-    image: gscaria/seleniumtest
+    image: gscaria/seleniumtest:latest
     depends_on: 
       - chrome
       - firefox

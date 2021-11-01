@@ -1,6 +1,6 @@
 FROM openjdk:8u212-jre-alpine3.9
 
-#To check the hub sttaus we need curl and jq
+#To check the hub status we need curl and jq
 RUN apk add curl jq
 
 #Set workspace
@@ -19,7 +19,7 @@ ADD Tricentis2.xml  					Tricentis2.xml
 ADD hubstatuscheck.sh					hubstatuscheck.sh
 	
 #Default Arguments
-ARG BROWSER="firefox"
+ARG BROWSER="chrome"
 ENV BROWSER=${BROWSER}
 
 ARG HUB_HOST="localhost"
