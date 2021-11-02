@@ -16,7 +16,10 @@ ADD Tricentis.xml 						Tricentis.xml
 ADD Tricentis2.xml  					Tricentis2.xml					
 
 #Add the shell script to check the hub status
-ADD hubstatuscheck.sh					hubstatuscheck.sh
+#ADD hubstatuscheck.sh					hubstatuscheck.sh
+
+# ADD health check script
+RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 	
 #Default Arguments
 ARG BROWSER="chrome"
@@ -25,8 +28,8 @@ ENV BROWSER=${BROWSER}
 ARG HUB_HOST="localhost"
 ENV HUB_HOST=${HUB_HOST}
 
-ARG TESTNGXML="Tricentis.xml"
-ENV TESTNGXML=${TESTNGXML}
+ARG MODULE="Tricentis.xml"
+ENV MODULE=${MODULE}
 
 #Command to run hub status check, once check is done, selenium test is performed(from shell script)
-ENTRYPOINT sh hubstatuscheck.sh
+ENTRYPOINT sh healthcheck.sh

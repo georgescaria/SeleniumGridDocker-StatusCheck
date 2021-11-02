@@ -30,7 +30,7 @@ services:
       - firefox
     environment:
       - BROWSER=chrome
-      - TESTNGXML=Tricentis.xml
+      - MODULE=Tricentis.xml
       - HUB_HOST=hub
     volumes:
       - .\outputs\1:/usr/share/udemy/test-output
@@ -41,7 +41,7 @@ services:
       - firefox
     environment:
       - BROWSER=chrome
-      - TESTNGXML=Tricentis2.xml
+      - MODULE=Tricentis2.xml
       - HUB_HOST=hub
     volumes:
       - .\outputs\2:/usr/share/udemy/test-output

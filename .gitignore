@@ -1,5 +1,5 @@
 target/
 test-output/
-output/
+outputs/
 *.html
 *.png

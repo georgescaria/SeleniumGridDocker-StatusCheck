@@ -16,7 +16,7 @@ mvn clean package -DskipTest
 docker build -t Imagename:tag .
 ```
 
-The **ENTRYPOINT** is set to run shell script(**hubstatuscheck.sh**) from where the script is run after checking whether the Grid is up and running with ready value as **true**
+The **ENTRYPOINT** is set to run shell script(**healthcheck.sh**) from where the script is run after checking whether the Grid is up and running with ready value as **true**
 
 3. Using **docker compose up** command, the following containers/services will be run in this Sample script:
 
