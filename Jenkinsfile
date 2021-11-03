@@ -23,10 +23,16 @@ pipeline {
 			    }                           
             }
         }
-        stage('Run Test on Selenium Grid') {
+        stage('Start Selenium Grid') {
         	steps {
         		//sh
-        		bat "docker compose up"
+        		bat "docker compose up --no-color -d hub chrome firefox"
+        		}
+        }
+        stage('Run Tests') {
+        	steps {
+        		//sh
+        		bat "docker compose up tricentis1 tricentis2"
         		}
         }
         stage('Stop Grid') {
